@@ -93,6 +93,22 @@ const config = {
     ],
   ],
 
+  // Offline/local search — no external service needed (works on the built site).
+  themes: [
+    [
+      '@easyops-cn/docusaurus-search-local',
+      {
+        hashed: true,
+        language: ['pt', 'en'],
+        indexBlog: true,
+        docsRouteBasePath: '/docs',
+        blogRouteBasePath: '/patch-notes',
+        highlightSearchTermsOnTargetPage: true,
+        searchResultLimits: 8,
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
