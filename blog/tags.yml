@@ -6,3 +6,6 @@ servidor: { label: Servidor, permalink: /servidor, description: "Atualizações 
 economia: { label: Economia, permalink: /economia, description: "Economia e taxas" }
 aviso: { label: Aviso, permalink: /aviso, description: "Comunicados importantes" }
 tecnico: { label: Técnico, permalink: /tecnico, description: "Detalhes técnicos e requisitos" }
+cliente: { label: Cliente, permalink: /cliente, description: "Mudanças no cliente do jogo" }
+eventos: { label: Eventos, permalink: /eventos, description: "Eventos do servidor" }
+correções: { label: Correções, permalink: /correcoes, description: "Correções de bugs" }

@@ -1,6 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import clsx from 'clsx';
 import {useBaseUrlUtils} from '@docusaurus/useBaseUrl';
+import Lightbox from '../Lightbox';
 import styles from './styles.module.css';
 
 // Tier accent — reuse the rarity palette idea from ItemCard.
@@ -22,10 +23,12 @@ const TIERS = {
  */
 export default function BossCard({name, image, tier = 'world', location, respawn, drops = []}) {
   const {withBaseUrl} = useBaseUrlUtils();
+  const [isZoomed, setIsZoomed] = useState(false);
+
   return (
     <aside className={clsx(styles.card, TIERS[tier] ?? TIERS.world)} role="group" aria-label={name}>
       {image && (
-        <div className={styles.thumb}>
+        <div className={styles.thumb} onClick={() => setIsZoomed(true)} style={{ cursor: 'zoom-in' }}>
           <img src={withBaseUrl(image)} alt={name} loading="lazy" />
         </div>
       )}
@@ -49,6 +52,14 @@ export default function BossCard({name, image, tier = 'world', location, respawn
           </ul>
         )}
       </div>
+
+      {isZoomed && (
+        <Lightbox
+          src={withBaseUrl(image)}
+          alt={name}
+          onClose={() => setIsZoomed(false)}
+        />
+      )}
     </aside>
   );
 }

@@ -1,0 +1,26 @@
+.container {
+  cursor: zoom-in;
+  display: inline-block;
+  position: relative;
+  margin: 1rem 0;
+}
+
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.9);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.fullImage {
+  max-width: 95%;
+  max-height: 95%;
+  object-fit: contain;
+}
