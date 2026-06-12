@@ -34,7 +34,7 @@ aqui ficam todas, inclusive as manutenções de rotina. Cada linha leva ao tópi
 | 04/11/2025 | v27 — Correções                              | [42275](https://forum.mucabrasil.com.br/threads/42275) |
 | 27/10/2025 | v26 — Halloween                              | [42263](https://forum.mucabrasil.com.br/threads/42263) |
 | 12/10/2025 | v25 — Impostos nas interfaces de NPC          | [42240](https://forum.mucabrasil.com.br/threads/42240) |
-| 09/09/2025 | v24 — Novas taxas de impostos ⭐               | [42180](https://forum.mucabrasil.com.br/threads/42180) |
+| 09/09/2025 | v24 — Novas taxas de impostos e melhorias ⭐   | [42180](https://forum.mucabrasil.com.br/threads/42180) |
 | 01/09/2025 | v23 — Novos sets e itens +15 ⭐                | [42158](https://forum.mucabrasil.com.br/threads/42158) |
 | 13/08/2025 | v22 — Correções e nova quest                  | [42125](https://forum.mucabrasil.com.br/threads/42125) |
 | 02/08/2025 | v21 — Mensagem global no Loren Market ⭐       | [42091](https://forum.mucabrasil.com.br/threads/42091) |

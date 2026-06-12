@@ -11,9 +11,10 @@ slug: /
 Guia da comunidade para o servidor **Mu Online — Muca Brasil**.
 
 :::info[Conteúdo não oficial]
-Esta wiki é mantida pela comunidade. As informações são compiladas a partir dos
-[Tutoriais do fórum](https://forum.mucabrasil.com.br/forums/13-Tutoriais) e dos avisos de
-**Manutenção**. Quando houver conflito, **o post mais recente prevalece**.
+Esta wiki é mantida de forma independente pela comunidade de jogadores. Não temos qualquer
+vínculo oficial com a administração do Muca Brasil. As informações são compiladas a partir
+dos [Tutoriais do fórum](https://forum.mucabrasil.com.br/forums/13-Tutoriais) e avisos de
+Manutenção. Quando houver conflito, **o post mais recente prevalece**.
 :::
 
 ## Por onde começar
