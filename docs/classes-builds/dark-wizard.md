@@ -67,6 +67,21 @@ Valores exatos de pontos variam por season/servidor — confira os Tutoriais do 
 
 :::quest
 **3ª Mudança de Classe — Grand Master**
-- Nível mínimo: 400 · NPC: Apostle Devin (Crywolf) · Pré-requisito: Marlon Quest (lv220)
-- Itens: **Death-Beam Knight Flame**, **Hell-Miner Horn**, **Dark Phoenix Feather** + fases de Barracks e Dark Elf
+A evolução definitiva para o final de jogo. Dividida em 3 fases:
+
+**Requisitos:** Nível 400 · 10+ resets · Ter concluído Marlon Quest.
+
+1. **Evidence of Strength:** Fale com **Apostle Devin** em Crywolf [228, 48]. Custo: 500kk Zen.
+   - Colete 1x **Death-Beam Knight Flame** (Tarkan [156, 222])
+   - Colete 1x **Hell-Miner Horn** (Aida [123, 103])
+   - Colete 1x **Dark Phoenix Feather** (Icarus [38, 211])
+   - *Recompensa: +20 pontos.*
+
+2. **Infiltration (Barracks):** Fale com Devin e pague 700kk Zen. Entre em Barracks pelo **Werewolf Guardsman** (Crywolf [62, 239] - 30kk por entrada).
+   - Mate **100 Balram**, **100 Death Spirit** e **100 Soram**.
+   - *Recompensa: +20 pontos.*
+
+3. **Into the Darkness (Dark Elf):** Fale com Devin e pague 1kkk Zen. No fim de Barracks, fale com o **Gatekeeper** [119, 168] para entrar no refúgio.
+   - Derrote o boss **Dark Elf**. (Evento solo ou party; requer lvl 400 e 1kkk por entrada).
+   - *Recompensa: +30 pontos + Evolução para Grand Master + Uso de Wings Level 3.*
 :::

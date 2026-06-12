@@ -18,18 +18,26 @@ const RARITIES = {
  * @param {string}   type        Tipo/slot do item (ex.: 'Two-Handed Sword').
  * @param {string[]} stats       Linhas de atributos.
  * @param {string}   description Lore em itálico (opcional).
+ * @param {string}   image       Caminho para imagem do item (opcional).
  */
-export default function ItemCard({title, rarity = 'Common', type, stats = [], description}) {
+export default function ItemCard({title, rarity = 'Common', type, stats = [], description, image}) {
   const tier = RARITIES[rarity] ?? RARITIES.Common;
 
   return (
     <aside className={clsx(styles.card, tier.className)} role="group" aria-label={`${title} (${tier.label})`}>
       <header className={styles.header}>
-        <h4 className={styles.title}>{title}</h4>
+        <div className={styles.titleWrapper}>
+          <h4 className={styles.title}>{title}</h4>
+          {type && <p className={styles.type}>{type}</p>}
+        </div>
         <span className={styles.rarity}>{tier.label}</span>
       </header>
 
-      {type && <p className={styles.type}>{type}</p>}
+      {image && (
+        <div className={styles.imageWrapper}>
+          <img src={image} alt={title} className={styles.image} />
+        </div>
+      )}
 
       {stats.length > 0 && (
         <ul className={styles.stats}>
