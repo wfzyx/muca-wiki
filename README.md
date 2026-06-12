@@ -3,7 +3,7 @@
 Wiki da comunidade para o servidor **Mu Online — Muca Brasil**, construída com
 [Docusaurus](https://docusaurus.io/) 3 e publicada no **GitHub Pages**.
 
-> Conteúdo fan-made (não oficial). Fontes: os
+> Conteúdo fan-made (não oficial e independente). Fontes: os
 > [Tutoriais](https://forum.mucabrasil.com.br/forums/13-Tutoriais) e os avisos de
 > **Manutenção** do fórum. Posts mais recentes **substituem** os antigos.
 > Nomes de itens/skills/mapas são mantidos no original do jogo.
