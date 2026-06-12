@@ -49,4 +49,10 @@ Existe um NPC **Julia** em Lorencia que leva direto ao Loren Market (e um NPC de
 :::patch
 Regras completas de PvP, drop e custos em **[Regras do Servidor](./regras.md)**. A numeração
 e o comportamento das salas podem mudar — valem os avisos de Manutenção mais recentes.
+
+**Fontes:** Sala 1 (premium), Sala 8→1, Stadium e exceção da Sala 2 →
+[Reestruturação de salas](https://forum.mucabrasil.com.br/threads/41108) · Sala 2 como
+**(PVP/PK)** e limpeza de PK → [Baús e PKs](https://forum.mucabrasil.com.br/threads/41231) ·
+Salas **10 / 19 / 20** → resposta do GM em [tópico de dúvidas](https://forum.mucabrasil.com.br/threads/42744)
+(não é uma notícia oficial — confirmar in-game).
 :::
