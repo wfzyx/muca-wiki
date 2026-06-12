@@ -1,0 +1,6 @@
+{
+  "label": "Mapas & Dungeons",
+  "position": 4,
+  "link": { "type": "doc", "id": "mundo-dungeons/index" },
+  "customProps": { "icon": "🗺️" }
+}

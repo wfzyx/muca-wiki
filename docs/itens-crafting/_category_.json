@@ -1,0 +1,6 @@
+{
+  "label": "Itens & Crafting",
+  "position": 3,
+  "link": { "type": "doc", "id": "itens-crafting/index" },
+  "customProps": { "icon": "⚔️" }
+}

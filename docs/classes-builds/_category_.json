@@ -1,0 +1,6 @@
+{
+  "label": "Classes & Builds",
+  "position": 2,
+  "link": { "type": "doc", "id": "classes-builds/index" },
+  "customProps": { "icon": "🛡️" }
+}

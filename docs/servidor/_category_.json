@@ -1,0 +1,6 @@
+{
+  "label": "Servidor",
+  "position": 6,
+  "link": { "type": "doc", "id": "servidor/index" },
+  "customProps": { "icon": "🌐" }
+}

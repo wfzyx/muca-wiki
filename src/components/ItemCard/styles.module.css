@@ -1,0 +1,103 @@
+/* ItemCard — MU Online item infobox. Rarity sets the accent color via CSS vars. */
+
+.card {
+  --rarity: var(--ifm-color-emphasis-500);
+  --rarity-glow: rgba(255, 255, 255, 0.08);
+
+  display: inline-block;
+  width: 100%;
+  max-width: 320px;
+  margin: 0.5rem 0;
+  padding: 0.9rem 1rem;
+  vertical-align: top;
+
+  background: linear-gradient(160deg, rgba(20, 20, 28, 0.96), rgba(12, 12, 18, 0.96));
+  border: 1px solid var(--rarity);
+  border-left: 4px solid var(--rarity);
+  border-radius: 8px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4), 0 6px 18px var(--rarity-glow);
+
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4), 0 10px 26px var(--rarity-glow);
+}
+
+.header {
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+  gap: 0.5rem;
+}
+
+.title {
+  margin: 0;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  color: var(--rarity);
+  text-shadow: 0 0 8px var(--rarity-glow);
+}
+
+.rarity {
+  flex-shrink: 0;
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--rarity);
+  opacity: 0.85;
+}
+
+.type {
+  margin: 0.15rem 0 0.6rem;
+  font-size: 0.8rem;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.stats {
+  margin: 0;
+  padding: 0.6rem 0 0;
+  list-style: none;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.stats li {
+  font-size: 0.85rem;
+  line-height: 1.55;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.stats li::before {
+  content: '◆';
+  margin-right: 0.45rem;
+  font-size: 0.6rem;
+  color: var(--rarity);
+}
+
+.description {
+  margin: 0.7rem 0 0;
+  font-size: 0.82rem;
+  font-style: italic;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ── Rarity tiers ──────────────────────────────────────────────────────── */
+.common {
+  --rarity: #b8b8c0;
+  --rarity-glow: rgba(184, 184, 192, 0.12);
+}
+.rare {
+  --rarity: #4ea1ff;
+  --rarity-glow: rgba(78, 161, 255, 0.22);
+}
+.epic {
+  --rarity: #b061ff;
+  --rarity-glow: rgba(176, 97, 255, 0.26);
+}
+.legendary {
+  --rarity: #ffb627;
+  --rarity-glow: rgba(255, 182, 39, 0.3);
+}

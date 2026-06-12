@@ -1,0 +1,121 @@
+---
+title: Weapons
+sidebar_label: Weapons
+sidebar_position: 2
+---
+
+import ItemCard from '@site/src/components/ItemCard';
+
+# Weapons
+
+O sistema de armas é construído em torno de **restrições por classe**. Toda arma pode ter
+seu nível aprimorado de **+0 a +15** com jewels de refinamento, além de opções **+Luck**,
+**+Skill** e **Excellent**.
+
+<div className="itemCardGrid">
+
+<ItemCard
+  title="Sword of Destruction"
+  rarity="Legendary"
+  type="Two-Handed Sword (Dark Knight)"
+  stats={[
+    'Attack Power: 145 ~ 152',
+    'Required Strength: 660',
+    'Excellent: +Damage 12%',
+    'Luck: +5% Critical',
+  ]}
+  description="Forjada nas profundezas de Kanturu, dizem que sua lâmina nunca perde o fio."
+/>
+
+<ItemCard
+  title="Staff of Resurrection"
+  rarity="Epic"
+  type="Staff (Dark Wizard)"
+  stats={['Magic Power: 130 ~ 138', 'Required Energy: 564', 'Excellent: +Mana 7%']}
+  description="Canaliza a energia dos caídos para amplificar feitiços."
+/>
+
+<ItemCard
+  title="Great Reign Crossbow"
+  rarity="Rare"
+  type="Crossbow (Fairy Elf)"
+  stats={['Attack Power: 130 ~ 142', 'Required Agility: 408']}
+/>
+
+<ItemCard
+  title="Kris"
+  rarity="Common"
+  type="Dagger"
+  stats={['Attack Power: 6 ~ 11', 'Required Strength: 40']}
+  description="A primeira lâmina de todo aventureiro."
+/>
+
+</div>
+
+## Categorias de armas por classe
+
+| Categoria                      | Classes que usam               |
+| ------------------------------ | ------------------------------ |
+| Swords (uma e duas mãos)       | Dark Knight, Magic Gladiator   |
+| Axes (machados)                | Dark Knight, Magic Gladiator   |
+| Spears (lanças)                | Dark Knight                    |
+| Maces (maças)                  | Dark Knight                    |
+| Daggers / Blades               | Dark Knight, Magic Gladiator   |
+| Staffs & Sticks                | Dark Wizard, Magic Gladiator   |
+| Bows (arcos)                   | Fairy Elf                      |
+| Crossbows (bestas)             | Fairy Elf                      |
+| Scepters (cetros)              | Dark Lord                      |
+
+O **Magic Gladiator** pode usar swords e staffs. Equipando dois swords idênticos, recebe
+bônus de dano. A **Fairy Elf** precisa de **Arrows** (arcos) ou **Bolts** (bestas) no slot
+de munição para atacar.
+
+## Níveis de item (+0 a +15)
+
+Cada +1 aumenta o dano da arma (ou a defesa da armadura).
+
+| Faixa     | Como aprimorar          | Taxa de sucesso base                 |
+| --------- | ----------------------- | ------------------------------------ |
+| +1 → +6   | Jewel of Bless          | 100% (sem risco)                     |
+| +6 → +9   | Jewel of Soul           | ~50% (falha reduz o nível)           |
+| +10 → +15 | Chaos Machine           | 70% → 45% (decrescente; ver Crafting)|
+
+:::patch
+Taxas e valores exatos variam por season/servidor — confira os Tutoriais do fórum.
+:::
+
+## Opções especiais de item
+
+- **+Luck** — +5% de chance de Critical Damage por peça (acumulativo) e maior taxa de
+  sucesso na Chaos Machine.
+- **+Skill** — adiciona a skill/animação de ataque especial ligada à arma.
+- **Excellent Options** — itens Excellent brilham e podem ter até **duas** opções (normais).
+
+**Opções Excellent ofensivas (armas):**
+
+| Opção                          | Efeito                                            |
+| ------------------------------ | ------------------------------------------------- |
+| Excellent DMG Chance +10%      | +10% de chance de dano Excellent (+110% do normal)|
+| ATK/WIZ DMG +1 a cada 20 níveis| +1 de dano físico/mágico por 20 níveis            |
+| ATK/WIZ DMG +2%                | +2% de dano fixo                                  |
+| ATK/WIZ Speed +7               | +7 de velocidade de ataque/cast                   |
+| Restore 1/8 HP por kill        | Restaura 1/8 do HP ao matar um monstro            |
+| Restore 1/8 Mana por kill      | Restaura 1/8 do Mana ao matar um monstro          |
+
+## Armas icônicas por classe
+
+**Dark Knight / Magic Gladiator — Swords & Blades:** Kris, Legendary Sword, Serpent Sword,
+Bone Blade, Flameberge, Sword of Destruction, Explosion Blade, Rune Bastard Sword, Daybreak,
+Chaos Dragon Axe.
+
+**Dark Wizard / Magic Gladiator — Staffs:** Skull Staff, Serpent Staff, Gorgon Staff,
+Staff of Resurrection, Staff of Destruction, Grand Viper Staff, Chaos Lightning Staff.
+
+**Fairy Elf — Bows:** Short Bow, Elven Bow, Tiger Bow, Silver Bow, Chaos Nature Bow,
+Celestial Bow, Sylph Wind Bow.
+
+**Fairy Elf — Crossbows:** Crossbow, Golden Crossbow, Bluewing Crossbow, Aquagold Crossbow,
+Saint Crossbow, Great Reign Crossbow.
+
+**Dark Lord — Scepters:** Battle Scepter, Great Scepter, Lord Scepter, Scepter of Archangel,
+Solay Scepter, Absolute Scepter.

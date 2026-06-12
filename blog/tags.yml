@@ -1,0 +1,4 @@
+patch: { label: Patch, permalink: /patch, description: "Mudanças do cliente/servidor" }
+regra: { label: Regra, permalink: /regra, description: "Regras do servidor" }
+evento: { label: Evento, permalink: /evento, description: "Eventos sazonais" }
+manutencao: { label: Manutenção, permalink: /manutencao, description: "Manutenções" }

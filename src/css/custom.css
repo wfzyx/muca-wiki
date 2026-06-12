@@ -1,0 +1,265 @@
+/**
+ * Muca Wiki global theme — built on Infima.
+ * Goal: dark, atmospheric "gaming" look instead of a software-docs feel.
+ */
+
+/* ── Brand palette (used in light mode too, but we default to dark) ─────── */
+:root {
+  --ifm-color-primary: #c0392b; /* MU blood-red accent */
+  --ifm-color-primary-dark: #ad3327;
+  --ifm-color-primary-darker: #a33025;
+  --ifm-color-primary-darkest: #86281e;
+  --ifm-color-primary-light: #c94e41;
+  --ifm-color-primary-lighter: #cd594c;
+  --ifm-color-primary-lightest: #d97a6f;
+
+  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+}
+
+/* ── Dark mode: the primary experience ─────────────────────────────────── */
+[data-theme='dark'] {
+  --ifm-color-primary: #e74c3c;
+  --ifm-color-primary-dark: #e53322;
+  --ifm-color-primary-darker: #df2c1a;
+  --ifm-color-primary-darkest: #b82416;
+  --ifm-color-primary-light: #ea6557;
+  --ifm-color-primary-lighter: #ec7165;
+  --ifm-color-primary-lightest: #f29a91;
+
+  /* Atmospheric near-black with a subtle blue tint */
+  --ifm-background-color: #0c0d12;
+  --ifm-background-surface-color: #14161e;
+  --ifm-navbar-background-color: rgba(12, 13, 18, 0.85);
+  --ifm-footer-background-color: #080910;
+
+  --ifm-color-content: #d6d8e0;
+  --ifm-color-content-secondary: #9aa0ad;
+  --ifm-toc-border-color: #23252f;
+
+  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.06);
+}
+
+/* Layered radial glow on the page background for depth. */
+[data-theme='dark'] body {
+  background-color: var(--ifm-background-color);
+  background-image:
+    radial-gradient(1200px 600px at 80% -10%, rgba(231, 76, 60, 0.08), transparent 60%),
+    radial-gradient(900px 500px at 0% 0%, rgba(60, 80, 180, 0.07), transparent 55%);
+  background-attachment: fixed;
+}
+
+/* Glassy navbar that floats over the atmospheric background. */
+[data-theme='dark'] .navbar {
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid #1e2029;
+}
+
+/* ── Sidebar link hover effects ────────────────────────────────────────── */
+.menu__link {
+  border-radius: 6px;
+  transition: background-color 0.15s ease, color 0.15s ease, transform 0.12s ease,
+    box-shadow 0.15s ease;
+}
+
+.menu__link:hover {
+  transform: translateX(3px);
+  background-color: rgba(231, 76, 60, 0.1);
+  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
+}
+
+.menu__link--active {
+  font-weight: 600;
+  box-shadow: inset 3px 0 0 var(--ifm-color-primary);
+}
+
+/* ── Custom admonitions (callouts) for game notices ────────────────────── */
+/* Authors use them in MDX with the standard `:::quest` / `:::patch` syntax.
+   These rely on Docusaurus generating `.alert.alert--<keyword>` wrappers,
+   which the config below enables via the admonition `keywords`. */
+
+.alert.alert--quest,
+.alert.alert--patch {
+  border-left-width: 5px;
+  border-radius: 8px;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+}
+
+/* "Quest Requirements" — emerald/gold quest-log vibe */
+.alert.alert--quest {
+  --ifm-alert-background-color: rgba(46, 204, 113, 0.08);
+  --ifm-alert-border-color: #f1c40f;
+  --ifm-alert-foreground-color: #e8f8ef;
+  border-left-color: #f1c40f;
+}
+.alert.alert--quest::before {
+  content: '📜 Quest';
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: #f1c40f;
+  text-transform: uppercase;
+}
+
+/* "Patch Changes" — alert/warning amber-red */
+.alert.alert--patch {
+  --ifm-alert-background-color: rgba(231, 76, 60, 0.08);
+  --ifm-alert-border-color: var(--ifm-color-primary);
+  --ifm-alert-foreground-color: #fdeaea;
+  border-left-color: var(--ifm-color-primary);
+}
+.alert.alert--patch::before {
+  content: '⚙️ Patch / Manutenção';
+  display: block;
+  margin-bottom: 0.4rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  color: var(--ifm-color-primary-lighter);
+  text-transform: uppercase;
+}
+
+/* ── Misc gaming polish ────────────────────────────────────────────────── */
+[data-theme='dark'] .markdown h1,
+[data-theme='dark'] .markdown h2 {
+  letter-spacing: -0.01em;
+  text-shadow: 0 0 24px rgba(231, 76, 60, 0.18);
+}
+
+[data-theme='dark'] .table-of-contents__link:hover {
+  color: var(--ifm-color-primary-lighter);
+}
+
+/* Layout helper for grids of <ItemCard /> / <BossCard /> in MDX. */
+.itemCardGrid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  align-items: stretch;
+}
+.itemCardGrid > * {
+  flex: 1 1 280px;
+}
+
+/* ── Patch Notes (blog) — give it the wiki's card identity, smaller type ── */
+html.blog-list-page main article {
+  margin-bottom: 1.5rem;
+  padding: 1.25rem 1.5rem;
+  background: var(--ifm-background-surface-color);
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-left: 4px solid var(--ifm-color-primary);
+  border-radius: 10px;
+  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+}
+html.blog-list-page main article:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 22px rgba(231, 76, 60, 0.16);
+}
+
+/* Smaller, readable titles (the default is oversized for a changelog feed). */
+html.blog-list-page main article header h2 {
+  font-size: 1.4rem;
+  line-height: 1.25;
+  margin-bottom: 0.4rem;
+}
+html.blog-list-page main article header h2 a {
+  color: var(--ifm-heading-color);
+}
+html.blog-list-page main article header h2 a:hover {
+  color: var(--ifm-color-primary);
+  text-decoration: none;
+}
+html.blog-post-page main article header h1 {
+  font-size: 2rem;
+  line-height: 1.2;
+}
+/* Tighten body + meta in the feed. */
+html.blog-list-page main article .markdown {
+  font-size: 0.92rem;
+}
+html.blog-list-page main article time {
+  font-size: 0.8rem;
+}
+
+/* Map gallery — responsive grid of map screenshots. */
+.mapGallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: 0.8rem;
+  margin: 1rem 0;
+}
+.mapGallery figure {
+  margin: 0;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  overflow: hidden;
+  background: var(--ifm-background-surface-color);
+  transition: transform 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+}
+.mapGallery figure:hover {
+  transform: translateY(-3px);
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 8px 20px rgba(231, 76, 60, 0.18);
+}
+.mapGallery img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+}
+.mapGallery figcaption {
+  padding: 0.4rem 0.6rem;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Set gallery — set-bonus thumbnails (kept whole, not cropped). */
+.setGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  gap: 0.7rem;
+  margin: 0.8rem 0 1.4rem;
+}
+.setGrid figure {
+  margin: 0;
+  padding: 0.4rem;
+  border: 1px solid var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  background: #0a0b10;
+  transition: transform 0.15s ease, border-color 0.15s ease;
+}
+.setGrid figure:hover {
+  transform: translateY(-2px);
+  border-color: var(--ifm-color-primary);
+}
+.setGrid img {
+  display: block;
+  width: 100%;
+  height: 130px;
+  object-fit: contain;
+}
+.setGrid figcaption {
+  margin-top: 0.3rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+/* Class portrait — floats beside the intro on wide screens. */
+.classPortrait {
+  float: right;
+  margin: 0 0 1rem 1.5rem;
+  border: 1px solid var(--ifm-color-primary);
+  border-radius: 8px;
+  box-shadow: 0 6px 18px rgba(231, 76, 60, 0.2);
+}
+@media screen and (max-width: 768px) {
+  .classPortrait {
+    float: none;
+    display: block;
+    margin: 0 auto 1rem;
+  }
+}

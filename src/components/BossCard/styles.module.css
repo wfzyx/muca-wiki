@@ -1,0 +1,108 @@
+/* BossCard — illustrated boss/event card. Mirrors ItemCard's atmosphere. */
+
+.card {
+  --accent: var(--ifm-color-emphasis-500);
+  --glow: rgba(255, 255, 255, 0.08);
+
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  margin: 0.5rem 0;
+  overflow: hidden;
+
+  background: linear-gradient(160deg, rgba(20, 20, 28, 0.96), rgba(12, 12, 18, 0.96));
+  border: 1px solid var(--accent);
+  border-top: 3px solid var(--accent);
+  border-radius: 10px;
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4), 0 6px 18px var(--glow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0 0 1px rgba(0, 0, 0, 0.4), 0 12px 28px var(--glow);
+}
+
+.thumb {
+  position: relative;
+  aspect-ratio: 16 / 10;
+  background: #07080c;
+  overflow: hidden;
+}
+
+.thumb img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.thumb::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 55%, rgba(12, 12, 18, 0.95));
+}
+
+.body {
+  padding: 0.8rem 1rem 1rem;
+}
+
+.name {
+  margin: 0 0 0.5rem;
+  font-size: 1.1rem;
+  line-height: 1.15;
+  color: var(--accent);
+  text-shadow: 0 0 10px var(--glow);
+}
+
+.meta {
+  margin: 0.15rem 0;
+  font-size: 0.82rem;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.label {
+  display: inline-block;
+  min-width: 4.2rem;
+  font-size: 0.66rem;
+  font-weight: 700;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: var(--accent);
+  opacity: 0.85;
+}
+
+.drops {
+  margin: 0.6rem 0 0;
+  padding: 0.55rem 0 0;
+  list-style: none;
+  border-top: 1px dashed var(--ifm-color-emphasis-300);
+}
+
+.drops li {
+  font-size: 0.82rem;
+  line-height: 1.5;
+  color: var(--ifm-color-emphasis-800);
+}
+
+.drops li::before {
+  content: '◆';
+  margin-right: 0.4rem;
+  font-size: 0.55rem;
+  color: var(--accent);
+}
+
+/* ── Tiers ─────────────────────────────────────────────────────────────── */
+.world {
+  --accent: #ffb627;
+  --glow: rgba(255, 182, 39, 0.28);
+}
+.event {
+  --accent: #b061ff;
+  --glow: rgba(176, 97, 255, 0.26);
+}
+.invasion {
+  --accent: #e74c3c;
+  --glow: rgba(231, 76, 60, 0.26);
+}
