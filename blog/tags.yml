@@ -2,3 +2,7 @@ patch: { label: Patch, permalink: /patch, description: "Mudanças do cliente/ser
 regra: { label: Regra, permalink: /regra, description: "Regras do servidor" }
 evento: { label: Evento, permalink: /evento, description: "Eventos sazonais" }
 manutencao: { label: Manutenção, permalink: /manutencao, description: "Manutenções" }
+servidor: { label: Servidor, permalink: /servidor, description: "Atualizações do servidor" }
+economia: { label: Economia, permalink: /economia, description: "Economia e taxas" }
+aviso: { label: Aviso, permalink: /aviso, description: "Comunicados importantes" }
+tecnico: { label: Técnico, permalink: /tecnico, description: "Detalhes técnicos e requisitos" }
