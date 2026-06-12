@@ -14,14 +14,14 @@ sala tem seu próprio mundo e spots; alguns mapas, porém, são **compartilhados
 | Sala     | Comportamento                                                                       |
 | -------- | ----------------------------------------------------------------------------------- |
 | **Sala 1** | **Non-PvP, exclusiva Premium/VIP.** Aceita qualquer quantidade de resets; HP dos monstros 10% menor; sem drop de Jewels (removido em 02/2024). |
-| **Sala 2** | **Non-PvP, gratuita.** Ambiente para iniciantes (historicamente até ~25 resets); buff da Elf Soldier até level 325; é a única sala onde ocorre **limpeza de PK**. |
+| **Sala 2** | **PvP/PK ativo (gratuita).** É a sala de referência do PK: onde ocorre a **limpeza de PK** e onde a penalidade extra de **+50% no drop** de PK **não** se aplica. |
 | **Salas 3–9** | **PvP/PK ativo.** Salas padrão do servidor, acesso livre, XP igual ao restante (100×). |
 | **Sala 10** | **PvP liberado, sem monstros e sem penalidade de PK.** Usada para testes e eventos (geralmente em Lost Tower). Itens dropados no chão **somem em 1s**. |
 | **Sala 19** | **Compartilhada:** Loren Market + Event Square. |
 | **Sala 20** | **Compartilhada:** Loren (Valley of Loren), Crywolf, Barracks e Refuge. |
 
 :::tip[Quero upar sem PvP]
-Use a **Sala 2** (gratuita) ou a **Sala 1** (Premium). As demais salas têm PK ativo.
+A **Sala 1** (Premium) é Non-PvP. As demais salas têm **PvP/PK ativo**.
 :::
 
 ## Mapas compartilhados
