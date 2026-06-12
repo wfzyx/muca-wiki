@@ -36,7 +36,7 @@ const config = {
   trailingSlash: false,
 
   // Start as 'warn' while content is incomplete; tighten to 'throw' before launch.
-  onBrokenLinks: 'warn',
+  onBrokenLinks: 'throw',
 
   // v4 location for the broken-markdown-links hook.
   markdown: {
@@ -60,8 +60,8 @@ const config = {
           sidebarPath: './sidebars.js',
           routeBasePath: 'docs',
           editUrl: `https://github.com/${GITHUB_ORG}/${GITHUB_REPO}/tree/main/`,
-          // Enable `showLastUpdateTime: true` AFTER your first git commit
-          // (it reads git history; it errors on a repo with no commits yet).
+          showLastUpdateTime: true,
+          showLastUpdateAuthor: true,
           // Register the game-specific callouts. `extendDefaults` keeps
           // note/tip/info/warning/danger working as usual.
           admonitions: {
