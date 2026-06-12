@@ -5,28 +5,30 @@
 
 /* ── Brand palette (used in light mode too, but we default to dark) ─────── */
 :root {
-  --ifm-color-primary: #c0392b; /* MU blood-red accent */
-  --ifm-color-primary-dark: #ad3327;
-  --ifm-color-primary-darker: #a33025;
-  --ifm-color-primary-darkest: #86281e;
-  --ifm-color-primary-light: #c94e41;
-  --ifm-color-primary-lighter: #cd594c;
-  --ifm-color-primary-lightest: #d97a6f;
+  /* Official Muca Brasil red (#cd0a0a) — readable on white in light mode. */
+  --ifm-color-primary: #cd0a0a;
+  --ifm-color-primary-dark: #b90909;
+  --ifm-color-primary-darker: #ae0909;
+  --ifm-color-primary-darkest: #8f0707;
+  --ifm-color-primary-light: #e80b0b;
+  --ifm-color-primary-lighter: #f31515;
+  --ifm-color-primary-lightest: #f63c3c;
 
   --ifm-code-font-size: 95%;
   --ifm-font-family-base: 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
-  --docusaurus-highlighted-code-line-bg: rgba(255, 255, 255, 0.08);
+  --docusaurus-highlighted-code-line-bg: rgba(0, 0, 0, 0.07);
 }
 
 /* ── Dark mode: the primary experience ─────────────────────────────────── */
 [data-theme='dark'] {
-  --ifm-color-primary: #e74c3c;
-  --ifm-color-primary-dark: #e53322;
-  --ifm-color-primary-darker: #df2c1a;
-  --ifm-color-primary-darkest: #b82416;
-  --ifm-color-primary-light: #ea6557;
-  --ifm-color-primary-lighter: #ec7165;
-  --ifm-color-primary-lightest: #f29a91;
+  /* Brighter red so it stays readable on near-black. */
+  --ifm-color-primary: #f5392b;
+  --ifm-color-primary-dark: #ef2516;
+  --ifm-color-primary-darker: #e22315;
+  --ifm-color-primary-darkest: #ba1d11;
+  --ifm-color-primary-light: #f75a4e;
+  --ifm-color-primary-lighter: #f86a5f;
+  --ifm-color-primary-lightest: #fa8b82;
 
   /* Atmospheric near-black with a subtle blue tint */
   --ifm-background-color: #0c0d12;
@@ -89,9 +91,8 @@
 /* "Quest Requirements" — emerald/gold quest-log vibe */
 .alert.alert--quest {
   --ifm-alert-background-color: rgba(46, 204, 113, 0.08);
-  --ifm-alert-border-color: #f1c40f;
-  --ifm-alert-foreground-color: #e8f8ef;
-  border-left-color: #f1c40f;
+  --ifm-alert-border-color: #d4a017;
+  border-left-color: #d4a017;
 }
 .alert.alert--quest::before {
   content: '📜 Quest';
@@ -99,15 +100,17 @@
   margin-bottom: 0.4rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: #f1c40f;
+  color: #b8860b;
   text-transform: uppercase;
+}
+[data-theme='dark'] .alert.alert--quest::before {
+  color: #f1c40f;
 }
 
 /* "Patch Changes" — alert/warning amber-red */
 .alert.alert--patch {
-  --ifm-alert-background-color: rgba(231, 76, 60, 0.08);
+  --ifm-alert-background-color: rgba(205, 10, 10, 0.08);
   --ifm-alert-border-color: var(--ifm-color-primary);
-  --ifm-alert-foreground-color: #fdeaea;
   border-left-color: var(--ifm-color-primary);
 }
 .alert.alert--patch::before {
@@ -116,7 +119,7 @@
   margin-bottom: 0.4rem;
   font-weight: 700;
   letter-spacing: 0.04em;
-  color: var(--ifm-color-primary-lighter);
+  color: var(--ifm-color-primary);
   text-transform: uppercase;
 }
 
@@ -142,27 +145,25 @@
   flex: 1 1 280px;
 }
 
-/* ── Patch Notes (blog) — give it the wiki's card identity, smaller type ── */
+/* ── Patch Notes (blog) — ultra-compact changelog feed ─────────────────── */
 html.blog-list-page main article {
-  margin-bottom: 1.5rem;
-  padding: 1.25rem 1.5rem;
+  margin-bottom: 0.65rem;
+  padding: 0.55rem 0.9rem;
   background: var(--ifm-background-surface-color);
   border: 1px solid var(--ifm-color-emphasis-200);
-  border-left: 4px solid var(--ifm-color-primary);
-  border-radius: 10px;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, border-color 0.15s ease;
+  border-left: 3px solid var(--ifm-color-primary);
+  border-radius: 7px;
+  transition: border-color 0.12s ease, box-shadow 0.12s ease;
 }
 html.blog-list-page main article:hover {
-  transform: translateY(-2px);
   border-color: var(--ifm-color-primary);
-  box-shadow: 0 8px 22px rgba(231, 76, 60, 0.16);
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.25);
 }
-
-/* Smaller, readable titles (the default is oversized for a changelog feed). */
+/* Compact title */
 html.blog-list-page main article header h2 {
-  font-size: 1.4rem;
-  line-height: 1.25;
-  margin-bottom: 0.4rem;
+  font-size: 1.05rem;
+  line-height: 1.2;
+  margin-bottom: 0.1rem;
 }
 html.blog-list-page main article header h2 a {
   color: var(--ifm-heading-color);
@@ -171,16 +172,33 @@ html.blog-list-page main article header h2 a:hover {
   color: var(--ifm-color-primary);
   text-decoration: none;
 }
-html.blog-post-page main article header h1 {
-  font-size: 2rem;
-  line-height: 1.2;
+/* Hide the author block + reading time; keep only the date for a tight feed. */
+html.blog-list-page main article header > div:has(.avatar),
+html.blog-list-page main article header [class*='authorCol'],
+html.blog-list-page main article .avatar {
+  display: none !important;
 }
-/* Tighten body + meta in the feed. */
+html.blog-list-page main article header time {
+  font-size: 0.72rem;
+  color: var(--ifm-color-content-secondary);
+}
+/* One-line summary, clamped */
 html.blog-list-page main article .markdown {
-  font-size: 0.92rem;
+  font-size: 0.82rem;
+  margin: 0.25rem 0 0;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
 }
-html.blog-list-page main article time {
-  font-size: 0.8rem;
+/* Pull the footer (tags / read more) up tight */
+html.blog-list-page main article footer {
+  margin-top: 0.4rem !important;
+  font-size: 0.78rem;
+}
+html.blog-post-page main article header h1 {
+  font-size: 1.9rem;
+  line-height: 1.2;
 }
 
 /* Map gallery — responsive grid of map screenshots. */

@@ -18,7 +18,7 @@ const GITHUB_REPO = 'muca-wiki'; // GitHub repository name
 const config = {
   title: 'Muca Wiki',
   tagline: 'Guia da comunidade — Mu Online Muca Brasil',
-  favicon: 'img/favicon.ico',
+  favicon: 'img/muca-favicon.ico',
 
   future: {
     v4: true, // Forward-compat with Docusaurus v4

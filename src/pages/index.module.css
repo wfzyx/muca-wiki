@@ -11,6 +11,11 @@
   border-bottom: 1px solid #1e2029;
 }
 
+.heroBanner :global(.hero__title),
+.heroBanner :global(.hero__subtitle) {
+  color: #f4f4f7;
+}
+
 .heroBanner :global(.hero__title) {
   font-size: 3.2rem;
   text-shadow: 0 0 30px rgba(231, 76, 60, 0.35);
