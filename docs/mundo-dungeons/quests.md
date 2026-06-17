@@ -33,15 +33,20 @@ classe). **Cace os itens sempre sozinho.**
 | Dark Wizard  | Soul of Wizard   | Soul Master |
 | Fairy Elf    | Tear of Elf      | Muse Elf    |
 
-## Quest de nível 220 — Captain Marlon
+## Quest de nível 220 — Captain Marlon (Hero Status)
 
-No nível 220, a quest do **Captain Marlon** libera o sistema de **Combo**. Magic Gladiator e
-Dark Lord são dispensados.
+Ao atingir o nível 220, os personagens (exceto MG e DL) podem realizar a quest do **Captain
+Marlon** para obter o **Hero Status**.
 
-:::patch
-Os itens e o custo exatos da quest de Marlon (Ring of Honor + item da classe) estão no tutorial
-do fórum. Esta seção será complementada com os detalhes oficiais.
-:::
+- **NPC:** Captain Marlon (circula entre Lorencia, Noria, Devias e Atlans).
+- **Custo:** 2.000.000 ~ 3.000.000 Zen.
+- **Item 1:** **Ring of Honor** (dropa em Tarkan, Icarus, Kanturu).
+- **Item 2 (DK apenas):** **Dark Stone**.
+
+**Recompensas:**
+- **Pontos:** O personagem passa a ganhar **6 pontos por nível** (em vez de 5) retroativamente.
+- **Skill:** Libera o uso da skill de **Combo** (exclusivo para Blade Knight).
+- **Evolução:** Permite aprender novas magias avançadas de nível 220+.
 
 ## 3ª Mudança de Classe — Quest Dark Elf
 
@@ -58,31 +63,40 @@ Feita em **3 fases** com o NPC **Apostle Devin** (Crywolf [228, 48]).
 Marlon concluídas (exceto MG e Dark Lord).
 :::
 
-### Fase 1 — Evidence of Strength
+### Fase 1 — Evidence of Strength (Lvl 380+)
 
-- **Custo:** 500.000.000 Zen. Coletar 1 de cada:
+- **Custo:** 500.000.000 Zen. Procure os itens (drop individual para quem tem a quest):
   - **Death-Beam Knight Flame** — Tarkan [156, 222]
   - **Hell-Miner Horn** — Aida [123, 103]
   - **Dark Phoenix Feather** — Icarus [38, 211]
-- **Recompensa:** +20 pontos.
+- **Recompensa:** +20 pontos de atributo e acesso à Fase 2.
 
-### Fase 2 — Barracks of Balgass
+### Fase 2 — Barracks of Balgass (Lvl 400)
 
-- **Custo:** 700.000.000 Zen (Devin). Entrada pelo **Werewolf Guardsman** (Crywolf [62, 239]),
-  **30.000.000 Zen** por entrada.
-- **Eliminar 300 no total:** 100× Balram · 100× Death Spirit · 100× Soram (cheque com a tecla **T**).
-- **Recompensa:** +20 pontos.
+- **Custo:** 700.000.000 Zen (Devin) + 30kk por cada entrada.
+- **Entrada:** NPC Werewolf Guardsman (Crywolf [62, 239]).
+- **Objetivo:** Eliminar 300 soldados de Kundun (100 Balram, 100 Death Spirit, 100 Soram).
+- **Recompensa:** +20 pontos de atributo e acesso à Fase 3.
 
-### Fase 3 — Into the Darkness Zone
+### Fase 3 — Into the Darkness Zone (Lvl 400)
 
-- **Custo:** 1.000.000.000 Zen (Devin) + 30kk de entrada. Entrada pelo **Gatekeeper**
-  (Balgass' Barracks [119, 168]); boss **Dark Elf** em Balgass' Resting Place [97, 187].
-- Solo ou party de até 5; **um grupo por vez**, a cada 15 min, **máx. 6/dia**, limite de **10 min**.
-- **Habilidades do boss:** Stern (freeze), Durability (quebra itens), Double Hit, Push, +10% attack speed.
-- **Recompensa:** +30 pontos, evolução para a 3ª classe, animação exclusiva e acesso às Wings
-  nível 3. Bônus por resets: 500+ → Condor Flame; 250+ → Loch's Feather (ou Crest of Monarch, DL).
+- **Custo:** 1.000.000.000 Zen (Devin) + 30kk de reentrada.
+- **Entrada:** NPC Gatekeeper (fim das Barracks [119, 168]).
+- **Boss:** **Dark Elf** (Balgass' Resting Place [97, 187]).
+
+**Regras e Mecânicas:**
+- **Entrada:** Solo ou party de até 5 (todos devem cumprir os requisitos). 1 grupo por vez, a cada 15 min. Limite de **6 participações por dia**.
+- **O Combate:** Limite de 10 minutos. Se morrer, não pode voltar na mesma rodada. Deve estar vivo e próximo à Dark Elf na hora da morte dela para validar.
+- **Habilidades da Dark Elf:** *Stern* (congela), *Durability* (quebra itens rapidamente), *Double Hit*, *Push* e buff de +10% Speed.
+- **Habilidades dos Guardas:** *Balram* (remove buff de def), *Death Spirit* (drena 50% de mana/stamina), *Soram* (empurra).
+
+**Recompensas Finais:**
+- Evolução para a 3ª Classe (Blade Master, Grand Master, High Elf, Duel Master ou Lord Emperor).
+- +30 pontos de atributo + Acesso às **Wings Level 3**.
+- **Bônus Especial (por resets):**
+  - **500 Resets:** 1× Condor Flame.
+  - **250+ Resets:** 1× Loch's Feather ou 1× Crest of Monarch (DL).
 
 :::patch
-Custos, coordenadas e contagens seguem o tutorial **"Evoluindo para a terceira classe (quest
-dark elf)"** do fórum.
+Informações grounded nos tutoriais oficiais. Lembre-se de desequipar seus itens antes de clicar na conclusão final para ver a animação exclusiva de mudança de classe!
 :::
