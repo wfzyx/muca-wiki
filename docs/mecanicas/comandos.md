@@ -16,8 +16,8 @@ atalhos de teclado.
 | `/autopick`  | Liga/desliga a **coleta automática de itens** do chão |
 
 :::patch
-Os parâmetros completos do `/autopick` (filtros por tipo/valor de item) devem ser conferidos
-no tutorial **"Customizações disponíveis no cliente"** do fórum.
+O `/autopick` permite filtros por nome de item. Os itens coletados aparecem no chat. Use
+o tutorial de customizações do fórum para a sintaxe completa de filtros.
 :::
 
 ## Distribuição de pontos
@@ -51,28 +51,35 @@ Aceitam valor absoluto ou porcentagem dos pontos livres (ex.: `/f 100`, `/e 100%
 | `/tradebau`                   | Trade via baú (o trade box comum foi desativado)                  |
 | `/autodc <level> [msg]` · `/autodc off` | Desconecta ao atingir o nível (Premium); msg na loja   |
 
-## Mensagem Global (`$`)
+## Chat e Loja Pessoal
 
-Mensagem visível a todos. **Exclusiva de contas Premium** e só pode ser enviada do
-**Loren Market**. Pressione **ENTER** e digite `$mensagem`. Passa por **moderação automática**.
+O sistema de comunicação e comércio recebeu melhorias significativas na Versão 36.
 
-- **Custo:** **100kk** (Premium). Intervalo mínimo de 30s. Use `/$ off` / `/$ on` no personagem.
-- Contas **Free não** podem usar a mensagem global.
+- **Mensagem Global ($):** Exclusiva Premium, enviada do Loren Market. Custa **100kk**. Agora conta com **moderação automática**.
+- **Chat Comum:** Limite aumentado para **140 caracteres**, com balões de até **3 linhas** e pequeno histórico.
+- **Personal Store (Loja):** Título ampliado para **80 caracteres** e até **3 linhas**.
+  - :::warning[CPF Obrigatório]
+    Para alterar o título da loja (que vem como "Loja Pessoal" por padrão), a conta **deve estar vinculada a um CPF** válido no site oficial.
+    :::
 
 ## Atalhos de teclado
 
-| Tecla            | Função                                          |
-| ---------------- | ----------------------------------------------- |
-| F7               | Simula cliques automáticos com o botão esquerdo |
-| F8               | Simula cliques automáticos com o botão direito  |
-| F9               | Minimiza para a bandeja do Windows              |
-| F11              | Liga/desliga o contador de FPS                  |
-| F12              | Ativa a câmera 3D                               |
-| Ctrl + Shift     | Ativa o modo PK                                 |
-| Shift + K / O / L| Alterna exibição de asas / roupas / sombras     |
-| Shift+F9 · Ctrl+F9 | Minimiza o 2º / 3º cliente                     |
+| Tecla            | Função                                                                 |
+| ---------------- | ---------------------------------------------------------------------- |
+| **F7**           | Auto-click **esquerdo** (útil para distribuir pontos e andar)         |
+| **F8**           | Auto-click **direito** (útil para usar magias continuamente)           |
+| **F9**           | Minimiza a 1ª instância para a bandeja (System Tray)                   |
+| **Shift + F9**   | Minimiza a 2ª instância                                                |
+| **Ctrl + F9**    | Minimiza a 3ª instância                                                |
+| **F11**          | Liga/desliga contador de FPS (Ideal: 25 FPS)                           |
+| **F12**          | Ativa a **Câmera 3D** (Premium). Use setas para rotacionar e scroll.   |
+| **Ctrl + Shift** | Ativa/Desativa o **Modo PK** (cursor fica vermelho)                    |
+| **Shift + K**    | Alterna exibição de **Asas**                                           |
+| **Shift + O**    | Alterna exibição de **Roupas/Capas**                                   |
+| **Shift + L**    | Alterna exibição de **Sombras**                                        |
 
-:::tip[Emoticons]
-O chat tem dezenas de emoticons que disparam animações (ex.: `eae`, `valeu`, `parabens`,
-`x1`, `kkk`, `vitoria`). Veja a lista completa no tutorial de comandos do fórum.
-:::
+## Emoticons Animados
+
+Digite os termos abaixo no chat (ou com `/` antes para não exibir o texto) para disparar animações:
+
+`eae`, `iai`, `bom dia`, `olá`, `valeu`, `vlw`, `obrigado`, `obrigada`, `xau`, `tchau`, `fui`, `legal`, `maneiro`, `wow`, `parabens`, `daora`, `palma`, `aki`, `aqui`, `venha`, `vem`, `duelo`, `x1`, `olha`, `lá`, `aquele`, `esquece`, `não`, `sem chance`, `nunca`, `jamais`, `nem`, `naum`, `desculpa`, `doeu`, `blz`, `aff`, `lol`, `chora`, `magoei`, `serio`, `sei`, `haha`, `hehe`, `hihi`, `huhu`, `kkk`, `amem`, `grande`, `consegui`, `viva`, `aleluia`, `ganhei`, `venci`, `vitoria`, `vitória`, `sono`, `dormi`, `durmi`, `cansado`, `gelo`, `frio`, `gelado`, `friu`, `denovo`, `de novo`, `certo`, `respeito`, `perdao`, `derrotado`, `as ordens`, `sentido`, `vamu`, `bora`, `vamo`, `anda`, `procurando`.

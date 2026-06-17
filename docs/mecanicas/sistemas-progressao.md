@@ -35,6 +35,10 @@ ser desfeitos).
 | Até 200 resets   | 30kk | 25kk    |
 | 201–250 resets   | 60kk | 50kk    |
 
+:::tip[Economia de Zen]
+O limite máximo de Zen que um personagem pode carregar é **2.000.000.000 (2kkk)**. O jeito mais eficiente de farmar Zen no início é coletando do chão em eventos como **Blood Castle** e **Devil Square**, onde o drop é abundante.
+:::
+
 **Pontos de status ganhos por reset:**
 
 | Conta   | Classe          | Pontos/reset |

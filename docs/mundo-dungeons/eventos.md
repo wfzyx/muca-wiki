@@ -12,19 +12,21 @@ Horários em **GMT-3 (Brasília)**, aproximados (podem variar com uptime/horári
 
 ## Tabela de horários
 
-| Evento          | Horários                                            |
+| Evento          | Horários (GMT -3)                                   |
 | --------------- | --------------------------------------------------- |
-| Blood Castle    | a cada :30 (00:30 → 23:30)                           |
-| Devil Square    | a cada :00 (00:00 → 23:00)                           |
-| Chaos Castle    | 02:00 · 05:30 · 10:00 · 13:30 · 18:00 · 21:30        |
-| White Wizard    | 00:00 · 08:00 · 16:00                                |
-| Death King      | 03:30 · 11:30 · 19:30                                |
-| Red Dragon      | 06:00 · 14:00 · 22:00                                |
-| Gold Invasion   | 07:30 · 15:30 · 23:30                                |
-| Illusion Temple | vários horários ao longo do dia                      |
-| Loren Deep      | 20:00                                                |
-| Crywolf         | **Sábados às 18:40**                                 |
-| Castle Siege    | **Domingos 21:00–22:30**                             |
+| **Blood Castle**| a cada :30 (ex.: 00:30, 01:30... 23:30)             |
+| **Devil Square**| a cada :00 (ex.: 00:00, 01:00... 23:00)             |
+| **Chaos Castle**| 02:00 · 05:30 · 10:00 · 13:30 · 18:00 · 21:30        |
+| **Illusion Temple**| 00:00 · 01:30 · 04:00 · 06:00 · 07:30 · 09:30 · 12:00 · 14:00 · 16:00 · 17:30 · 20:00 · 22:00 |
+| **White Wizard**| 00:00 · 08:00 · 16:00                                |
+| **Death King**  | 03:30 · 11:30 · 19:30                                |
+| **Red Dragon**  | 06:00 · 14:00 · 22:00                                |
+| **Gold Invasion**| 07:30 · 15:30 · 23:30                                |
+| **Loren Deep**  | 20:00                                                |
+| **Crywolf**     | **Sábados às 18:40**                                 |
+| **Castle Siege**| **Domingos 21:00 às 22:30**                          |
+
+> 💡 Use o comando **`/eventos`** no jogo para saber qual o próximo evento disponível para seu nível.
 
 ## Blood Castle
 
@@ -121,7 +123,5 @@ Duração 10 min. Pontos: matar o GM inimigo = 1, gol = 20.
 - **Gold Invasion** (07:30/15:30/23:30) — ver [Raids & World Bosses](./raids.mdx).
 
 :::patch
-Horários, requisitos e recompensas seguem os [Tutoriais](https://forum.mucabrasil.com.br/forums/13-Tutoriais)
-e os avisos de Manutenção. **Illusion Temple, Imperial Guardian e Loren Market** aparecem no
-servidor mas não têm tutorial dedicado indexado.
+Horários grounded na Tabela de Eventos oficial. **Illusion Temple** (sala 1 e 8 off) e **Loren Deep** (invasão em Valley of Loren) agora constam na escala. **Imperial Guardian** e **Event Square** são funcionais, mas os horários variam conforme a sala/manutenção.
 :::

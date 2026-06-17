@@ -10,11 +10,15 @@ Classe: **Dark Wizard / Magic Gladiator**. Os dois Ancients deste set base:
 
 ![Bronze](/img/sets/bronze.jpg)
 
-## Mist — `/Mist`
-- Full set: Skill Damage +20, Mana +30
+## Hyperion — `/Hyperion`
+- **Peças:** Armor, Pants, Boots.
+- **Bônus parciais:** Energia +15, Agilidade +15.
+- **Full set:** Skill DMG +20, Mana +30.
 
-## Ephleet — `/Ephleet`
-- Full set: Double Damage chance +10%, Agility +20
+## Mist — `/Mist`
+- **Peças:** Helm, Pants, Gloves.
+- **Bônus parciais:** Vitalidade +20, Skill DMG +30.
+- **Full set:** Double DMG +10%, Agilidade +20.
 
 :::patch
 Valores conforme o tutorial **[Ancient Sets](https://forum.mucabrasil.com.br/threads/37-Ancient-Sets)** do fórum (a imagem acima é a fonte). Use `/<nome>` no jogo para ver as opções.
